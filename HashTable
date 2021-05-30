@@ -1,0 +1,28 @@
+package com.company;
+        import java.util.*;
+
+
+public class DoirashevTimurHashTable  {
+
+    public static void main(String[] args) {
+
+
+        // Создаем наш HashTable.
+        Hashtable<String, String> hashtbl = new Hashtable<>();
+        Enumeration name;
+        String keys;
+
+        // Добавляем значение и ключ в наш HashTable.
+        hashtbl.put("1",  " Астана");
+        hashtbl.put("2",  " Алматы");
+        hashtbl.put("3",  " Шымкент");
+        hashtbl.put("4",  " Жетысай");
+        hashtbl.put("5",  " Тараз");
+        name = hashtbl.keys();
+
+        while( name.hasMoreElements() ) {
+            keys = (String) name.nextElement() ;
+            System.out.println("KEY № " + keys + " has the VALUE : " + hashtbl.get( keys )) ;
+        }
+    }
+}
