@@ -1,0 +1,32 @@
+package com.company;
+import java.util.*;
+
+
+public class DoirashevTimurBST {
+    public static void main(String[] args)
+    {
+        int TimurArray[] = { 1, 2, 4, 7, 21, 12, 11 };
+
+        Arrays.sort(TimurArray);
+        Scanner x = new Scanner(System.in) ;
+
+        int res ;
+        int key1 = x.nextInt();
+
+        res = Arrays.binarySearch(TimurArray, key1);
+        if (res >= 0)
+            System.out.println(key1 + " найден по индексу под № " + res);
+        else
+            System.out.println(key1 + " Ничего не найдено");
+
+        int key2 = x.nextInt();
+        
+        res = Arrays.binarySearch(TimurArray, key2);
+        
+        if (res >= 0)
+            System.out.println(key2 + " найден по индексу под № " + res);
+        
+        else
+            System.out.println(key2 + " Ничего не найдено");
+    }
+}
